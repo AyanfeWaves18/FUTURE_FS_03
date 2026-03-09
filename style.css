@@ -1,228 +1,392 @@
-/* Reset */
+/* ===================================
+   GLOBAL RESET
+=================================== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
 body {
   font-family: Arial, sans-serif;
   background: #000;
-  color: white;
+  color: #fff;
   line-height: 1.6;
 }
 
-/* Navbar */
+.container{
+max-width:1200px;
+margin:auto;
+padding:0 20px;
+}
+
+
+/* ===================================
+   NAVBAR
+=================================== */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
   background: #111;
+  position: relative;
 }
-.navbar a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-}
-.navbar a:hover {
-  color: orange;
-}
+
 .logo {
   width: 80px;
 }
 
-/* Hero */
+.navbar nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover {
+  color: orange;
+}
+
+
+
+/* ===================================
+   HERO SECTION
+=================================== */
+
 .hero {
   text-align: center;
   padding: 100px 20px;
   background: linear-gradient(to right, teal, orange);
 }
+
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 10px;
 }
+
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
+
 .cta-btn {
   background: teal;
-  color: white;
+  color: #fff;
   padding: 12px 25px;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
   text-decoration: none;
-}
-.cta-btn:hover {
-  background: darkcyan;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-/* Products Grid */
+.cta-btn:hover {
+  background: #009e9e;
+}
+
+
+
+/* ===================================
+   PRODUCTS
+=================================== */
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   padding: 20px;
 }
+
 .product {
   background: #222;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
+  transition: 0.3s;
 }
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
 .product img {
   width: 100%;
-  height: auto;
   border-radius: 6px;
+  margin-bottom: 10px;
 }
-.product h3 {
-  margin: 10px 0;
-}
+
 .product button {
   background: orange;
-  color: black;
-  padding: 8px 15px;
   border: none;
-  border-radius: 4px;
+  padding: 10px 15px;
   cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: 0.3s;
 }
+
 .product button:hover {
-  background: darkorange;
+  background: #ff9c00;
 }
 
-/* Cart */
-#cartItems {
-  max-width: 800px;
-  margin: 20px auto;
-  background: #222;
-  padding: 20px;
-  border-radius: 8px;
+
+
+/* ===================================
+   CONTACT FORM
+=================================== */
+
+.contact {
+  padding: 60px 20px;
+  text-align: center;
 }
 
-/* Checkout */
-.checkout-form {
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin: auto;
+}
+
+.form-row {
   display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  margin: 30px auto;
-  background: #222;
-  padding: 20px;
-  border-radius: 10px;
   gap: 15px;
+  margin-bottom: 15px;
 }
+
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #e5e5e5;
+  font-size: 15px;
+  color: #000;
+}
+
+textarea {
+  resize: none;
+}
+
+.contact button {
+  background: teal;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact button:hover {
+  background: #00a7a7;
+}
+
+
+
+/* ===================================
+   CHECKOUT PAGE
+=================================== */
+
+.page-content {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.page-content h1 {
+  margin-bottom: 20px;
+}
+
+.checkout-form {
+  margin-top: 20px;
+}
+
+.checkout-form h2 {
+  margin: 25px 0 10px;
+  font-size: 1.4rem;
+}
+
 .checkout-form input,
 .checkout-form select {
+  width: 100%;
   padding: 12px;
-  border-radius: 6px;
+  margin-bottom: 15px;
   border: none;
-  background: #111;
-  color: white;
-}
-.checkout-form input::placeholder {
-  color: gray;
+  border-radius: 4px;
+  background: #e5e5e5;
+  font-size: 15px;
+  color: #000;
 }
 
-/* Footer */
+.checkout-form button {
+  margin-top: 20px;
+}
+
+#cardDetails {
+  margin-top: 10px;
+}
+
+/* ===================================
+   ACCOUNT PAGE
+=================================== */
+
+.form-container{
+max-width:400px;
+margin:80px auto;
+background:#111;
+padding:40px;
+border-radius:8px;
+text-align:center;
+}
+
+.form-container input{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:none;
+border-radius:4px;
+background:#e5e5e5;
+color:#000;
+}
+
+.form-container button{
+width:100%;
+}
+
+.form-container a{
+color:orange;
+text-decoration:none;
+}
+
+.form-container a:hover{
+text-decoration:underline;
+}
+
+#passwordStrength{
+font-size:14px;
+margin-bottom:10px;
+}
+
+
+
+/* ===================================
+   FOOTER
+=================================== */
+
 footer {
   text-align: center;
   padding: 20px;
   background: #111;
+  margin-top: 40px;
 }
 
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  margin: 30px auto;
-  background: #222;
-  padding: 25px;
-  border-radius: 10px;
-  gap: 15px;
-}
 
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  border-radius: 6px;
-  border: none;
-  background: #111;
-  color: white;
-  font-size: 16px;
-}
+/* ===================================
+   MOBILE MENU ICONS
+=================================== */
 
-.contact-form textarea {
-  height: 120px;
-  resize: none;
-}
-
-
-.form-container {
-  max-width: 400px;
-  margin: 100px auto;
-  background: rgba(0,0,0,0.7);
-  padding: 20px;
-  border-radius: 8px;
-  color: white;
-  text-align: center;
-}
-
-.form-container input {
-  width: 90%;
-  padding: 12px;
-  margin: 10px 0;
-  border-radius: 6px;
-  border: none;
-}
-
-.form-container button {
-  background: teal;
-  color: white;
-  padding: 12px;
-  border: none;
-  width: 95%;
-  font-size: 16px;
-  border-radius: 6px;
+.menu-toggle {
+  font-size: 28px;
+  display: none;
   cursor: pointer;
 }
 
-.form-container button:hover {
-  background: orange;
-}
-
-#passwordStrength {
-  font-size: 14px;
-  margin-top: -8px;
-  margin-bottom: 10px;
-}
-
-/* Navbar User Section */
-#userSection {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-#userSection span {
-  color: white;
-  font-weight: bold;
-}
-
-#userSection button {
-  background: teal;
-  color: white;
-  border: none;
-  padding: 6px 14px;
-  border-radius: 4px;
+.close-btn {
+  display: none;
+  font-size: 28px;
   cursor: pointer;
-  font-size: 14px;
-  transition: 0.3s;
 }
 
-#userSection button:hover {
-  background: orange;
-  color: black;
+
+
+/* ===================================
+   MOBILE RESPONSIVE
+=================================== */
+
+@media (max-width: 768px) {
+
+  /* Navbar */
+
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  /* Hide desktop nav */
+
+  .navbar nav {
+    display: none;
+  }
+
+  /* Show hamburger */
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Mobile menu */
+
+  #mobileMenu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 30px;
+    gap: 20px;
+    transition: 0.4s;
+    z-index: 1000;
+  }
+
+  #mobileMenu a {
+    font-size: 18px;
+  }
+
+  #mobileMenu.active {
+    right: 0;
+  }
+
+  /* Close button */
+
+  .close-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  /* Form stacking */
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  /* Hero scaling */
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
 }

@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nike Rebrand - Cart</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nike Rebrand - Cart</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="navbar">
-    <img src="Nike Logo.png" alt="Nike Logo" class="logo">
-  <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-    <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
-    <span id="userSection">
-      <a href="contact.html">Contact</a>
-      <a href="account.html">Login / Sign Up</a>
-    </span>
-  </nav>
-  </header>
 
-  <section class="page-content">
-    <h1>Your Cart</h1>
-    <div id="cartItems"></div>
-    <h2 id="totalPrice">Total: $0</h2>
-    <a href="checkout.html" class="cta-btn">Proceed to Checkout</a>
-  </section>
+<header class="navbar">
 
-  <footer>
-    <p>© 2025 Nike Rebrand.</p>
-  </footer>
+<img src="Nike Logo.png" alt="Nike Logo" class="logo">
 
-  <script src="script.js"></script>
+<div class="menu-toggle" id="menuToggle">☰</div>
+
+<nav id="mobileMenu">
+
+<div class="close-btn" id="closeMenu">✕</div>
+
+<a href="index.html" class="active">Home</a>
+<a href="about.html">About</a>
+<a href="products.html">Products</a>
+<a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+<a href="contact.html">Contact</a>
+
+<span id="userSection">
+<a href="account.html">Login / Sign Up</a>
+</span>
+
+</nav>
+
+</header>
+
+<section class="page-content">
+
+<h1>Your Cart</h1>
+
+<div id="cartItems"></div>
+
+<h2 id="totalPrice">Total: $0</h2>
+ <a href="checkout.html" class="cta-btn" target="_blank">Proceed to Checkout</a>
+
+</section>
+
+<footer>
+<p>© 2025 Nike Rebrand.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,44 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Nike Rebrand</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Nike Rebrand</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="navbar">
-    <img src="Nike Logo.png" alt="Nike Logo" class="logo">
-   <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-    <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
-    <span id="userSection">
-      <a href="contact.html">Contact</a>
-      <a href="account.html">Login / Sign Up</a>
-    </span>
-  </nav>
-  </header>
 
-  <section class="page-content">
-    <h1>Contact Us</h1>
-    <form id="contactForm" class="contact-form">
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="email" id="email" placeholder="Your Email" required>
-      <input type="tel" id="phone" placeholder="Phone Number">
-      <textarea id="message" placeholder="Your Message" required></textarea>
-      <button type="submit" class="cta-btn">Send Message</button>
-    </form>
-    <div id="contactSuccess" style="display: none; color: lightgreen; margin-top: 15px;">
-      ✅ Your message has been sent successfully!
+<header class="navbar">
+
+<img src="Nike Logo.png" alt="Nike Logo" class="logo">
+
+<div class="menu-toggle" id="menuToggle">☰</div>
+
+<nav id="mobileMenu">
+
+<div class="close-btn" id="closeMenu">✕</div>
+
+<a href="index.html" class="active">Home</a>
+<a href="about.html">About</a>
+<a href="products.html">Products</a>
+<a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+<a href="contact.html">Contact</a>
+
+<span id="userSection">
+<a href="account.html">Login / Sign Up</a>
+</span>
+
+</nav>
+
+</header>
+
+<section class="page-content">
+
+<h1>Contact Us</h1>
+
+<form id="contactForm" class="contact-form">
+
+<div class="form-row">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
     </div>
-  </section>
 
-  <footer>
-    <p>© 2025 Nike Rebrand.</p>
-  </footer>
+    <div class="form-row">
+      <input type="tel" placeholder="Phone Number">
+    </div>
 
-  <script src="script.js"></script>
+    <div class="form-row">
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+    </div>
+
+    <button type="submit">Send Message</button>
+
+  </form>
+
+<div id="contactSuccess" style="display:none; color:lightgreen; margin-top:15px;">
+✅ Your message has been sent successfully!
+</div>
+
+</section>
+
+<footer>
+<p>© 2025 Nike Rebrand.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

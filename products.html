@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nike Rebrand - Products</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nike Rebrand - Products</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="navbar">
-    <img src="Nike Logo.png" alt="Nike Logo" class="logo">
-   <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-    <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
-    <span id="userSection">
-      <a href="contact.html">Contact</a>
-      <a href="account.html">Login / Sign Up</a>
-    </span>
-  </nav>
-  </header>
 
-  <section class="page-content">
-    <h1>Our Products</h1>
+<header class="navbar">
 
-    <!-- Search and Filter -->
-    <div class="filters">
-      <input type="text" id="searchInput" placeholder="Search products...">
-      <select id="categoryFilter">
-        <option value="all">All Categories</option>
-        <option value="shoes">Shoes</option>
-        <option value="clothing">Clothing</option>
-        <option value="accessories">Accessories</option>
-      </select>
-    </div>
+<img src="Nike Logo.png" alt="Nike Logo" class="logo">
 
-    <!-- Product Grid -->
-    <div id="productsContainer" class="products-grid">
+<div class="menu-toggle" id="menuToggle">☰</div>
 
-      <!-- 8 Products -->
+<nav id="mobileMenu">
+
+<div class="close-btn" id="closeMenu">✕</div>
+
+<a href="index.html" class="active">Home</a>
+<a href="about.html">About</a>
+<a href="products.html">Products</a>
+<a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+<a href="contact.html">Contact</a>
+
+<span id="userSection">
+<a href="account.html">Login / Sign Up</a>
+</span>
+
+</nav>
+
+</header>
+
+<section class="page-content">
+
+<h1>Our Products</h1>
+
+<div class="filters">
+<input type="text" id="searchInput" placeholder="Search products...">
+
+<select id="categoryFilter">
+<option value="all">All Categories</option>
+<option value="shoes">Shoes</option>
+<option value="clothing">Clothing</option>
+<option value="accessories">Accessories</option>
+</select>
+</div>
+
+<div id="productsContainer" class="products-grid">
+  <!-- 8 Products -->
       <div class="product">
         <img src="Nike Air Zoom.png" alt="Nike Air Zoom Pegasus">
         <h3>Nike Air Zoom Pegasus</h3>
@@ -143,15 +154,14 @@
         <p>$130</p>
         <button onclick="addToCart(15)">Add to Cart</button>
       </div>
+</div>
 
+</section>
 
-    </div>
-  </section>
+<footer>
+<p>© 2025 Nike Rebrand.</p>
+</footer>
 
-  <footer>
-    <p>© 2025 Nike Rebrand.</p>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
